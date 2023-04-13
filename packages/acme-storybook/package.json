@@ -9,7 +9,7 @@
     "build": "build-storybook --docs",
     "preview-storybook": "serve storybook-static",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rm -rf .turbo"
+    "clean": "rimraf .turbo && rimraf storybook-static"
   },
   "dependencies": {
     "@acme/design-system": "workspace:*",
@@ -19,11 +19,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
-    "@storybook/addon-docs": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/builder-vite": "^0.2.4",
-    "@storybook/react": "^6.5.13",
+    "@storybook/addon-docs": "^7.0.0",
+    "@storybook/addon-essentials": "^7.0.0",
+    "@storybook/addon-links": "^7.0.0",
+    "@storybook/builder-vite": "^7.0.4",
+    "@storybook/react": "^7.0.0",
     "autoprefixer": "^10.4.12",
     "eslint": "^8.26.0",
     "eslint-config-acme": "workspace:*",

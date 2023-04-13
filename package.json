@@ -12,7 +12,7 @@
     "build:docs": "turbo run build --filter=docs...",
     "dev": "turbo run dev",
     "start": "turbo run start",
-    "clean": "turbo run clean && rm -rf node_modules",
+    "clean": "turbo run clean && rimraf node_modules",
     "lint": "turbo run lint",
     "format": "prettier --write .",
     "changeset": "changeset",
@@ -25,5 +25,10 @@
     "prettier": "^2.6.2",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@7.15.0"
+  "packageManager": "pnpm@7.15.0",
+  "dependencies": {
+    "cpy-cli": "^4.2.0",
+    "make-dir-cli": "^3.0.0",
+    "rimraf": "^5.0.0"
+  }
 }
