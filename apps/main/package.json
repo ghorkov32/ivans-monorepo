@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rimraf .next && rimraf .turbo"
+    "clean": "rimraf .next && rimraf .turbo && rimraf node_modules"
   },
   "dependencies": {
     "@acme/design-system": "workspace:*",

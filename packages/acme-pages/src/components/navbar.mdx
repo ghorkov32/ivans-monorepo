@@ -1,0 +1,23 @@
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs'
+import '@vercel/examples-ui/globals.css'
+
+<Meta title="navbar-mdx" component={Navbar} />
+
+# Button
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
+
+## Arguments
+
+<ArgsTable of={Button} />
+
+## Examples
+
+export const Template = (args) => <Navbar {...args} />
+
+Primary
+
+<Story name="Primary" args={{ items: [{ text: 'About me', href: '/about-me', icon: '?' }, { text: 'Showcase Apps', href: '', icon: '?', childrenItems: [ { text: 'About me', href: '/about-me', icon: '?' }, { text: 'About me', href: '/about-me', icon: '?' } ] }, { text: 'About them', href: '/about-me', icon: '?' } ] }}>
+  {Template.bind({})}
+</Story>
+

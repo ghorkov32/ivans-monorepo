@@ -9,7 +9,7 @@
     "build": "build-storybook --docs",
     "preview-storybook": "serve storybook-static",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rimraf .turbo && rimraf storybook-static"
+    "clean": "rimraf .turbo && rimraf storybook-static && rimraf node_modules"
   },
   "dependencies": {
     "@acme/design-system": "workspace:*",

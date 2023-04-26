@@ -10,7 +10,7 @@
     "copy-tailwind": "make-dir dist && cpy src/tailwind.cjs dist/ --flat",
     "types": "tsc --emitDeclarationOnly",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rimraf ./dist && rimraf .turbo"
+    "clean": "rimraf ./dist && rimraf .turbo && rimraf node_modules"
   },
   "sideEffects": false,
   "type": "module",

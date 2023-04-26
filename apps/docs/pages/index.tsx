@@ -4,7 +4,7 @@ import Navbar from '@acme/pages/components/navbar'
 export default function Index() {
   return (
     <Page>
-      <Navbar isDocsApp />
+      <Navbar />
       <Text variant="h1" className="mb-6">
         Docs
       </Text>
